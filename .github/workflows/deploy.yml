@@ -1,0 +1,34 @@
+# Author: bigdreamer7
+# Desc  : Use actions to automatically publish websites
+# Date  : 2024-4-12
+name: Deploy
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup mdbook
+      uses: peaceiris/actions-mdbook@v1
+      with:
+        mdbook-version: "latest"
+    
+    - name: build
+      run: mdbook build . --dest-dir ./book
+
+    - name: Publish to gh.io
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN}}
+        publish_dir: ./book
+        publish_branch: gh-pages
+
+
