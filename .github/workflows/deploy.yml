@@ -1,5 +1,5 @@
 # Author: bigdreamer7
-# Desc  : Use actions to automatically publish websites
+# Brief : Use actions to automatically publish websites
 # Date  : 2024-4-12
 name: Deploy
 on:

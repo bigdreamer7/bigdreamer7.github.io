@@ -1,5 +1,14 @@
 [book]
-authors = []
-language = "en"
+title = "Bigdreamer's Kitchen"
+authors = ["Bigdreamer"]
+language = "zh-cn"
 multilingual = false
 src = "src"
+
+[output.html]
+mathjax-support = true
+git-repository-url = "https://github.com/bigdreamer7/bigdreamer7.github.io"
+git-repository-icon = "fa-github"
+
+[output.html.print]
+enable = false
