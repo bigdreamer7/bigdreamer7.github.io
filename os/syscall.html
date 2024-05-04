@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>👨🏻‍💻 Introduction - Bigdreamer&#x27;s Kitchen</title>
+        <title>System Call - Bigdreamer&#x27;s Kitchen</title>
 
 
         <!-- Custom HTML head -->
@@ -12,20 +12,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -36,7 +36,7 @@
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html" class="active"><strong aria-hidden="true">1.</strong> 👨🏻‍💻 Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 🫕 Cooking Tools</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="code_editor/vim.html"><strong aria-hidden="true">2.1.</strong> Vi/Vim</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Vscode</div></li><li class="chapter-item expanded "><a href="code_editor/markdown.html"><strong aria-hidden="true">2.3.</strong> Markdown</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 📚 Data Structures and Algorithms</div></li><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 🧮 OS</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Linux</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="os/syscall.html"><strong aria-hidden="true">4.1.1.</strong> System Call</a></li><li class="spacer"></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 🌻 DevOps with CI/CD</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.</strong> Jenkins</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> Github Actions</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../chapter_1.html"><strong aria-hidden="true">1.</strong> 👨🏻‍💻 Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 🫕 Cooking Tools</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../code_editor/vim.html"><strong aria-hidden="true">2.1.</strong> Vi/Vim</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Vscode</div></li><li class="chapter-item expanded "><a href="../code_editor/markdown.html"><strong aria-hidden="true">2.3.</strong> Markdown</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 📚 Data Structures and Algorithms</div></li><li class="spacer"></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 🧮 OS</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Linux</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../os/syscall.html" class="active"><strong aria-hidden="true">4.1.1.</strong> System Call</a></li><li class="spacer"></li></ol></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 🌻 DevOps with CI/CD</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.</strong> Jenkins</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> Github Actions</div></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -174,27 +174,47 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>你好，这里是<code>大梦想家的后厨</code>，欢迎来到我的博客！
-在这里，我将与大家分享我在编程世界中的探索、学习和成长。</p>
-<p>在我的博客中，你将看到各种编程技术方面的文章，包括但不限于：</p>
+                        <h1 id="系统调用"><a class="header" href="#系统调用">系统调用</a></h1>
+<p><a href="https://strace.io"><code>strace</code></a>工具可以用于监控和篡改进程与Linux内核之间的交互，包括系统调用、信号传递和进程状态的更改。</p>
+<pre><code class="language-sh">$ strace -p 26380
+strace: Process 26380 attached
+...
+</code></pre>
+<p>常用参数：</p>
 <ul>
-<li>深入解析各种编程语言的特性和用法</li>
-<li>探讨前沿技术和行业趋势</li>
-<li>分享实用的编程技巧、代码示例和最佳实践</li>
-<li>推荐优质的学习资源、工具和书籍</li>
+<li><code>-f</code> : 同时追踪子进程或子线程的系统调用</li>
+<li><code>-e</code> : 过滤追踪的系统调用类型</li>
 </ul>
-<p>无论你是刚刚入门，还是经验丰富的技术人员，我相信我的博客都能为你带来一些启发和帮助。</p>
-<p><code>Kitchen</code>的含义：在技术的世界里，能像<code>Chef</code>一样不断地创造、调试和优化我们的菜肴，为世界带来美味和创新。</p>
+<pre><code class="language-sh">-e trace=%clock    Trace all system calls that read or modify system clocks.
+         %creds    Trace all system calls that read or modify user and group identifiers or capability sets.
+         %desc     Trace all file descriptor related system calls.
+         %file     Trace all system calls which take a file name as an argument.
+         %fstat    Trace fstat and fstatat syscall variants.
+         %fstatfs  Trace fstatfs, fstatfs64, fstatvfs, osf_fstatfs, and osf_fstatfs64 system calls.
+         %ipc      Trace all IPC related system calls.
+         %lstat    Trace lstat syscall variants.
+         %memory   Trace all memory mapping related system calls.
+         %network  Trace all the network related system calls.
+         %process  Trace all system calls which involve process management.
+         %pure     Trace syscalls that always succeed and have no arguments.
+         %signal   Trace all signal related system calls.
+         %stat     Trace stat syscall variants.
+         %statfs   Trace statfs, statfs64, statvfs, osf_statfs, and osf_statfs64 system calls.
+         %%stat    Trace syscalls used for requesting file status.
+         %%statfs  Trace syscalls related to file system statistics.
+</code></pre>
+<ul>
+<li><code>-o</code> : 输出结果到文件</li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-
-                            <a rel="next prefetch" href="code_editor/vim.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                            <a rel="prev" href="../code_editor/markdown.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
                             </a>
+
 
                         <div style="clear: both"></div>
                     </nav>
@@ -202,10 +222,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-
-                    <a rel="next prefetch" href="code_editor/vim.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                    <a rel="prev" href="../code_editor/markdown.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
                     </a>
+
             </nav>
 
         </div>
@@ -218,17 +238,17 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
-        <script src="mermaid.min.js"></script>
-        <script src="mermaid-init.js"></script>
+        <script src="../mermaid.min.js"></script>
+        <script src="../mermaid-init.js"></script>
 
 
     </div>
